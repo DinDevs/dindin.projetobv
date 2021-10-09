@@ -1,88 +1,93 @@
-
 <!DOCTYPE HTML>
 <html lang="pt-br">
 <head>
-   <meta charset="utf-8"/>
-   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-   <title>Dindin  </title>
-   <link href="css/seu-stylesheet.css" rel="stylesheet"/>
-   <script src="scripts/seu-script.js"></script>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+	<title>Dindin </title>
+	<link href="css/seu-stylesheet.css" rel="stylesheet" />
+	<script src="scripts/seu-script.js"></script>
+	<link rel="stylesheet" href="stylesCONTACT.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- cor de fundo verde nav  #2E948A -->
-<!-- cor de fundo branca header  #E5E5E5 -->	
-<header>
+	<!-- cor de fundo verde nav  #2E948A -->
+	<!-- cor de fundo branca header  #E5E5E5 -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="dindin-imagens/logo-header.png" alt="">
+			</div>
+			<nav>
+				<ul>
+					<a href="">
+						<li>CURSOS</li>
+					</a>
+					<a href="">
+						<li>BLOG </li>
+					</a>
+					<a href="">
+						<li>CONTATO</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<main>
+		<div id="formulário">
+			<h1>Contato</h1>
+		</div>
+		<br>
+	<form>
 
-    <nav>
-        <ul align="right">
-			<td>
-			<a href="cursos.html">Cursos</a> 
-            </td>
-	    	
-			<td> 
-			<a href="blog.html">Blog </a>	
-            </td>
+		<div id="blocos">
 
-			<td> 
-			<a href="contato">Contato</a>	
-            </td>
-		
-		</ul>
-    </nav>   
+            	<input type="text" placeholder="nome" id="nome" required>
+			<br>
+           		<input type="email" placeholder="email" id="email" required>
+			<br>
+            	<textarea row="30" style="width: 100%;" placeholder="mensagem" id="email" required></textarea>
 
-    <img src="dindin-imagens/logo-header.png" alt="">
+			<br>
+			<a href="">
+				<button type="submit" id="botão">entrar</button>
+			</a>
+		</div>
 
-    
-    
-    <form action="/pagina-processa-dados-do-form" method="post">
-        <div>
-            <label for="name"></label>
-            <input type="text" id="name" />
-        </div>
-        <div>
-            <label for="mail"></label>
-            <input type="email" id="mail" />
-        </div>
-        <div>
-            <label for="msg"></label>
-            <textarea id="msg"></textarea>
-        </div>
-        <div class="button">
-            <button type="submit">Entrar</button>
-        </div>
-    </form>
+		<div id="img">
+			<img src="dindin-imagens/ilustra-contato.png" alt="">
+		</div>
+
+	</form>
 
 
+</main>
 
+	<!-- cor de fundo do footer é verde #419488  -->
+	<footer>
 
-
-    <img src="dindin-imagens/ilustra-contato.png" alt="">
-             <!-- cor de fundo do footer é verde #419488  -->
-    <footer>
-	   
 		<img src="dindin-imagens/logo-footer.png" alt="">
-		
-		
-		<nav align="center">
+
+
+		<nav id="linksite">
 			<ul>
-                <a href="">cursos<br></a>  
-			    <a href="">blog<br></a>  
-			    <a href="">contato<br></a>  
-            </ul>
+				<li><a href="">cursos</a></li>
+				<li><a href="">blog</a></li>
+				<li><a href="">contato</a></li>
+			</ul>
 		</nav>
 
-		<nav align="right">
-			<ul>   
-            <a href="">quero ser prof</a>    
-            </ul>
-			<ul>
-            <a href="">aqui tem outro link</a>  
-            <ul>
+		<nav id="contato">
+			<a href="">quero ser prof</a>
+			<a href="">quero ser aluno</a>
 		</nav>
-	
-	
+
+
 	</footer>
 </body>
 </html>
-
-	
