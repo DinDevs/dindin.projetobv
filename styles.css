@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 900px;
+    width: 980px;
     margin: auto;
 }
 
@@ -45,6 +45,7 @@ header nav ul li {
 
 /*============================ MAIN =====================================*/
 
+/*===================================SECTION INDEX=========================================*/
 
 section#index {
     margin-top: 70px;
@@ -54,6 +55,15 @@ section#index {
 
 .desc {
     margin-right: 50px;
+}
+
+.desc h1 {
+    color:#FF4081
+}
+
+.desc p {
+    margin-bottom: 25px;
+    font-size: 14px;
 }
 
 #index img {
@@ -69,7 +79,6 @@ section h1{
     color: #555555;
     font-size:12px;
     margin-top: 15px;
-    margin-bottom: 30px;
 }
 
 section a{
@@ -81,27 +90,57 @@ section a{
     padding: 10px;
 }
 
-#cards{
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-}
+/*===================================SECTION CARDS=========================================*/
 
 #cards {
     background-color: #F6F6F6;
+    margin-top: 70px;
+}
+
+#cards .container{
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+#cards .container h2{
+    text-align: center;
+    color: #FF4081;
+    font-size: 16px;
+    margin-top: 30px;    
+}
+
+#cards .container p{
+    text-align: center;   
+    margin-top: 30px;
+}
+
+#cards .container a{
+    color:#FFFFFF;
+    background-color: #FF4081;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-align: center;
 }
 
 #cards div {
-    width: 200px;
+    width: 250px;
 }
 
 #cards img {
-    height: 200px;
+    height: 270px;
 }
 
-
-section#depoimentos {
+/*===================================SECTION DEPOIMENTOS=========================================*/
+section#depoimentos h1,p{
     margin-top: 70px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500px;
+}
+
+.container h1 {
+    margin-bottom: 30px;
 }
 
 section#depoimentos .depoimentos {
@@ -116,7 +155,7 @@ section#depoimentos .depoimentos div {
 }
 
 section#depoimentos div img {
-    height: 120px;
+    height: 70px;
     margin: 15px;
  }
 
@@ -126,15 +165,25 @@ section#posts {
 
 }
 
+/*===================================SECTION POSTS=========================================*/
+
+#posts {
+    padding:50px;
+}
 .posts {
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
 }
 
+
 .posts .post {
     width: 230px;
 
+}
+
+.post h4 {
+    color: #419488;
 }
 
 .posts .img {
@@ -147,11 +196,13 @@ section#posts {
 
 #posts p.bottom {
       text-align: center;
+      margin-top: 70px;
 }
+
+/*===================================FOOTER=========================================*/
 
 footer{
     height: 100px;
-    margin-top:  35px;
     background: #2E948A;
     display: flex;
     justify-content: space-around;
@@ -170,16 +221,17 @@ footer ul {
 
 footer ul li{
     font-size: 12px;
+    line-height: 20px;
 }
 
 
 footer #contato a{
     display: flex;
     flex-direction: column;
-    margin: 7px;
-    padding: 7px;
+    padding: 7px 30px;
     font-size: 12px;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 62px;
+    margin:10px;
 }
