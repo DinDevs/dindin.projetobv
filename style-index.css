@@ -5,6 +5,7 @@
 }
 
 .container {
+
     width: 980px;
     margin: auto;
 }
@@ -234,5 +235,7 @@ footer #contato a{
     box-sizing: border-box;
     border-radius: 62px;
     margin:10px;
+    text-decoration: none;
+    color: #FFFFFF;
 
 }
