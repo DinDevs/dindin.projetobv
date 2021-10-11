@@ -73,6 +73,11 @@ article {
     text-align: justify;
 }
 
+article a {
+    text-decoration: none;
+    color: #000;
+}
+
 article h2 {
     margin-bottom: 20px;
     color: #ff4081;
@@ -120,6 +125,10 @@ footer ul li{
     line-height: 20px;
 }
 
+footer ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 footer #contato a{
     display: flex;
