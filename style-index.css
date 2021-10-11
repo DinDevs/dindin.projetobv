@@ -1,17 +1,18 @@
-*{
+* {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
 
-    width: 1200px;
+    max-width: 90%;
     margin: auto;
 }
 
 /*============================ HEADER =====================================*/
-header{
+header {
     background: #2E948A;
     height: 90px;
 }
@@ -23,8 +24,12 @@ header .container {
     padding: 15px
 }
 
-.container .logo img { 
-      height: 60px;  
+.container .logo img {
+    height: 60px;
+}
+
+#btn-mobile {
+    display: none;
 }
 
 header nav ul {
@@ -39,7 +44,7 @@ header nav ul a {
 
 header nav ul li {
     margin-left: 15px;
-    font-size: 15px;     
+    font-size: 15px;
 }
 
 
@@ -59,32 +64,32 @@ section#index {
 }
 
 .desc h1 {
-    color:#FF4081
+    color: #FF4081
 }
 
 .desc p {
     margin-bottom: 25px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 #index img {
     height: 300px;
 }
 
-section h1{ 
+section h1 {
     color: #009688;
     font-size: 35px;
     font-weight: bold;
 }
 
- section p{
+section p {
     color: #555555;
-    font-size:15px;
+    font-size: 15px;
     margin-top: 15px;
 }
 
-section a{
-    color:#FF4081;
+section a {
+    color: #FF4081;
     font-size: 13px;
     border: 2px solid #FF4081;
     border-radius: 62px;
@@ -99,28 +104,28 @@ section a{
     margin-top: 70px;
 }
 
-#cards .container{
+#cards .container {
     display: flex;
-    width: 980px;
+    width: 100%;
     justify-content: space-between;
     padding: 50px;
 }
 
-#cards .container h2{
+#cards .container h2 {
     text-align: center;
     color: #FF4081;
     font-size: 19px;
     margin-top: 30px;
-    font-weight:bold;  
+    font-weight: bold;
 }
 
-#cards .container p{
-    text-align: center;   
+#cards .container p {
+    text-align: center;
     margin-top: 30px;
 }
 
-#cards .container a{
-    color:#FFFFFF;
+#cards .container a {
+    color: #FFFFFF;
     background-color: #FF4081;
     font-size: 14px;
     padding: 10px 30px;
@@ -136,7 +141,8 @@ section a{
 }
 
 /*===================================SECTION DEPOIMENTOS=========================================*/
-section#depoimentos h1,p{
+section#depoimentos h1,
+p {
     margin-top: 70px;
     font-family: 'Nunito', sans-serif;
     font-weight: 500px;
@@ -150,18 +156,18 @@ section#depoimentos h1,p{
 section#depoimentos .depoimentos {
     display: flex;
     justify-content: space-between;
- }
+}
 
 section#depoimentos .depoimentos div {
-   display: flex;
-   width: 450px;
-   align-items: center;
+    display: flex;
+    width: 450px;
+    align-items: center;
 }
 
 section#depoimentos div img {
     height: 70px;
     margin: 15px;
- }
+}
 
 section#posts {
     margin-top: 70px;
@@ -172,8 +178,9 @@ section#posts {
 /*===================================SECTION POSTS=========================================*/
 
 #posts {
-    padding:50px;
+    padding: 50px;
 }
+
 .posts {
     display: flex;
     justify-content: space-between;
@@ -201,20 +208,19 @@ section#posts {
 
 
 #posts p.bottom {
-      text-align: center;
-      margin-top: 70px;
+    text-align: center;
+    margin-top: 70px;
 }
 
 /*===================================FOOTER=========================================*/
 
-footer{
+footer {
     height: 100px;
     background: #2E948A;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #FFFFFF;
-    font-size: 20px;
 }
 
 footer img {
@@ -225,27 +231,151 @@ footer ul {
     list-style: none;
 }
 
-footer ul li{
+#linksite ul li {
     font-size: 12px;
     line-height: 20px;
 }
 
-footer ul li a{
+#linksite ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+
+footer #contato p {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 30px;
+    font-size: 15px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 62px;
+    margin: 10px;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-
-footer #contato a{
-    display: flex;
-    flex-direction: column;
-    padding: 7px 30px;
-    font-size: 12px;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 62px;
-    margin:10px;
+footer #contato p a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+#contato p:hover {
+    background-color: #62d6cb;
+}
+
+@media only screen and (max-width:480px) {
+
+    /*===================================HEADER=========================================*/
+
+    #menu {
+        display: none;
+    }
+
+    .togle {
+        display: block;
+        color: #FFFFFF;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /*===================================SECTION INDEX=========================================*/
+
+    section#index {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .desc h1 {
+        text-align: center;
+    }
+
+
+    .desc p.link {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /*===================================SECTION CARDS=========================================*/
+
+    section#cards .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 60px;
+    }
+
+    /*===================================SECTION DEPOIMENTOS=========================================*/
+
+    .depoimentos {
+        flex-direction: column;
+    }
+
+    section#depoimentos .depoimentos div {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /*===================================SECTION DEPOIMENTOS=========================================*/
+
+    .posts {
+        flex-direction: column;
+    }
+
+    .posts .post {
+        margin-bottom: 50px;
+    }
+
+    #posts p.bottom {
+        margin-top: 0px;
+    }
+
+    /*===================================FOOTER=========================================*/
+
+    footer {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 30px;
+    }
+
+    nav#contato {
+        width: 100%;
+    }
+
+    #linksite {
+        display: none;
+    }
+
+    #contato p {
+        margin: 30px;
+    }
+
+    #contato p a {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    footer img {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display:block;
+    }
+
+    #menu {
+        display: none;
+    }
+   
 
 }
