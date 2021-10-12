@@ -1,30 +1,34 @@
-*{
+* {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    width: auto;
+    max-width: 90%;
     margin: auto;
 }
 
 /*============================ HEADER =====================================*/
-header{
+header {
     background: #2E948A;
     height: 90px;
-    width: 100%;
 }
 
 header .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 15px
 }
 
-.container .logo img { 
+.container .logo img {
     height: 60px;
+}
+
+#btn-mobile {
+    display: none;
 }
 
 header nav ul {
@@ -43,24 +47,12 @@ header nav ul li {
 }
 
 /*============================ MAIN =====================================*/
-body{
-    width: 100%;
-    max-width: 100%;
-    min-width: 830px;
-}
-
-main{
-    margin: auto;
-    max-width: 100%;
-    min-width: 830px;
-    object-fit: cover;
-}
-
 main h1{
     font-size: 35px;
     color: #FF4081;
     margin-left: 20%;
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-right: 20%;
 }
 
 main form{
@@ -70,10 +62,10 @@ main form{
 
 main form #blocos{
     display: table-cell;
-    padding-right: 50px;
-    width: 100%;
+    width: 50%;
     margin-left: 20%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
+    padding-right: 5%;
 }
 
 main form input, textarea{
@@ -90,16 +82,17 @@ main textarea{
     height: 300px;
 }
 
+form div#img{
+    margin-right: 15%;
+}
 
-main form #img{
+div#img img{
     width: 100%;
-    margin-bottom: 15%;
-    margin-right: 20%;
 }
 
 main a button{
     max-width: 100%;
-    min-width: 20%;
+    min-width: 15%;
     border: 2px solid #FF4081;
     border-radius: 62px;
     padding: 5px 30px;
@@ -115,40 +108,36 @@ main a button{
 
 
 /*===================================FOOTER=========================================*/
-
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+footer {
     height: 100px;
     background: #2E948A;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    max-width: 602px;
-    min-width: 100%;
+    color: #FFFFFF;
 }
 
-footer nav li{
+footer img {
+    height: 60px;
+}
+
+footer ul {
     list-style: none;
 }
 
-body footer #linksite ul li a{
+#linksite ul li {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#linksite ul li a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 15px;
 }
 
-footer img{
-    height: 60px;
-}
 
-footer ul li{
-    font-size: 12px;
-    line-height: 20px;
-}
-
-footer #contato a{
+footer #contato p {
     display: flex;
     flex-direction: column;
     padding: 7px 30px;
@@ -157,10 +146,95 @@ footer #contato a{
     box-sizing: border-box;
     border-radius: 62px;
     margin: 10px;
-    color: #FFFFFF;
     text-decoration: none;
+    color: #FFFFFF;
 }
 
-#contato a:hover{
-    background-color:#62d6cb;
+footer #contato p a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#contato p:hover {
+    background-color: #62d6cb;
+}
+
+/*===================================RESPONSIVIDADE=========================================*/
+
+@media only screen and (max-width:480px) {
+
+/*===================================HEADER=========================================*/
+
+    #menu {
+        display: none;
+    }
+
+    .togle {
+        display: block;
+        color: #FFFFFF;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+/*===================================MAIN=========================================*/
+    main form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main h1, div#img img{
+        margin-left: 10%;
+    }
+
+    main form #blocos{
+        width: 80%;
+        margin-right: 15%;
+    }
+
+    form img {
+        margin-bottom: 10%;
+    }
+
+    main a button{
+        width: 100%;
+    }
+
+/*===================================FOOTER=========================================*/
+    footer {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 30px;
+    }
+
+    nav#contato {
+        width: 100%;
+    }
+
+    #linksite {
+        display: none;
+    }
+
+    #contato p {
+        margin: 30px;
+    }
+
+    #contato p a {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    footer img {
+        margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+        #btn-mobile {
+            display:block;
+        }
+
+        #menu {
+            display: none;
+        }
+    }
 }
