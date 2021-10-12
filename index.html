@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
 	<title>Dindin | Educação Financeira</title>
-	<link rel="stylesheet" href="styles.css/style-index.css" />
+	<link rel="stylesheet" href="styles/style-index.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style-global.css">
 </head>
 
 <body>
@@ -21,11 +22,16 @@
 	<header>
 		<div class="container">
 			<div class="logo">
-				<img src="dindin-imagens/logo-header.png" alt="">
+				<a href="./index.html" tittle="Página inicial"><img src="dindin-imagens/logo-header.png" alt="Logo da empresa"> </a>
 			</div>
 			<nav id="nav">
-				<button id="btn-mobile">Menu</button>
-				<ul id="menu">
+				<button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+					<span id="hamburguer"></span>
+				</button>
+				<ul id="menu" role="menu">
+					<a href="./index.html" tittle="Página inicial">
+                        <li>HOME</li>
+                    </a>
 					<a  href="./cursos.html" tittle="Página de cursos">
 						<li>CURSOS</li>
 					</a>
@@ -44,17 +50,15 @@
 	<main>
 
 		<section id="index">
-			<div class="desc">
-				<h1>Educação <br> Financeira <br> é tudo de bom</h1>
-				<p>Vem comigo que te mostro por onde começar </p>
-				<p class="link"><a href="">quero saber mais</a></p>
-			</div>
-			<div>
-				<img src="dindin-imagens/ilustra-banner.png" alt="Esta é uma ilustração de uma pessoa 
-				de camiseta listrada, jaqueta e calça preta, de cabelos curtos e óculos.
-				Esta pessoa está sentada e de pernas cruzadas, com os braços levantados, 
-				um braço está segurando um gráfico de pizza e o outro está segurando uma 
-				pilha de folhas de papel.">
+			<div class="container">
+				<div class="desc">
+					<h1>Educação <br> Financeira <br> é tudo de bom</h1>
+					<p>Vem comigo que te mostro por onde começar </p>
+					<p class="link"><a href="">quero saber mais</a></p>
+				</div>
+				<div>
+					<img src="dindin-imagens/ilustra-banner.png" alt="">
+				</div>
 			</div>
 		</section>
 
@@ -64,8 +68,7 @@
 		<section id="cards">
 			<div class="container">
 				<div class="card">
-					<img src="dindin-imagens/ilustra-poupando.png" alt="Imagem ilustrativa do curso investimento 
-					para iniciantes, onde uma pessoa pensativa está montada num cavalo de peça de xadrez e sobre um tabuleiro de xadrez">
+					<img src="dindin-imagens/ilustra-poupando.png" alt="Imagem sobre investimento">
 					<h2>Investimento para iniciantes</h2>
 					<p>Duis aute irure dolor in reprehenderit <br> in voluptate velit esse cillum dolore eu fugiat nulla
 						pariatur.
@@ -74,8 +77,7 @@
 				</div>
 
 				<div class="card">
-					<img src="dindin-imagens/ilustra-investimento.png" alt="Imagem ilustrativa do curso poupando e rendendo, 
-					onde pessoa está regando uma árvore em que seus frutos é dinheiro">
+					<img src="dindin-imagens/ilustra-investimento.png" alt="Imagem sobre poupar">
 					<h2>Poupando e Rendendo</h2>
 					<p>Duis aute irure dolor in reprehenderit <br> in voluptate velit esse cillum dolore eu fugiat nulla
 						pariatur.
@@ -84,8 +86,7 @@
 				</div>
 
 				<div class="card">
-					<img src="dindin-imagens/ilustra-independencia.png" alt="Imagem ilustrativa do curso independência financeira, 
-					onde uma pessoa no topo de uma montanha está segurando uma taça como se tivesse vencido uma competição">
+					<img src="dindin-imagens/ilustra-independencia.png" alt="Imagem sobre independência financeira">
 					<h2>Independência Financeira</h2>
 					<p>Duis aute irure dolor in reprehenderit <br> in voluptate velit esse cillum dolore eu fugiat nulla
 						pariatur.
@@ -146,30 +147,42 @@
 			<div class="container">
 				<h1>MAIS CONTEÚDO PARA VOCÊ</h1>
 				<div class="posts">
+					
 					<div class="post">
-						<div class="img"></div>
-						<h4>Itaque earum rerum</h4>
-						<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias 
-							consequatur aut perferendis doloribus asperiores repellat.</p>
+						<div>
+							<div class="img"></div>
+						</div>
+						<div>
+							<h4>Itaque earum rerum</h4>
+							<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+								consequatur
+								aut
+								perferendis doloribus asperiores repellat.</p>
+						</div>
 					</div>
-
 					<div class="post">
-						<div class="img"></div>
-						<h4>Itaque earum rerum</h4>
-						<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-							consequatur
-							aut
-							perferendis doloribus asperiores repellat.</p>
-
+						<div>
+							<div class="img"></div>
+						</div>
+						<div>
+							<h4>Itaque earum rerum</h4>
+							<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+								consequatur
+								aut
+								perferendis doloribus asperiores repellat.</p>
+						</div>
 					</div>
-
 					<div class="post">
-						<div class="img"></div>
-						<h4>Itaque earum rerum</h4>
-						<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-							consequatur
-							aut
-							perferendis doloribus asperiores repellat.</p>
+						<div>
+							<div class="img"></div>
+						</div>
+						<div>
+							<h4>Itaque earum rerum</h4>
+							<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+								consequatur
+								aut
+								perferendis doloribus asperiores repellat.</p>
+						</div>
 					</div>
 				</div>
 
@@ -189,24 +202,23 @@
 
 	<!-- cor de fundo do footer é verde #419488  -->
 	<footer>
-
-		<img src="dindin-imagens/logo-footer.png" alt="">
-
-
-		<nav id="linksite">
-			<ul>
-				<li><a href="./cursos.html" tittle="Página de cursos">cursos</a></li>
-				<li><a href="./blog.html" tittle="Blog da página">blog</a></li>
-				<li><a href="./contato.html" tittle="Página de contato">contato</a></li>
-			</ul>
-		</nav>
-
-		<nav id="contato">
-			<p><a href="">quero ser prof</a></p>
-			<p><a href="./cursos.html" tittle="Página de cursos">quero ser aluno</a></p>
-		</nav>
-
-
+		<div class="container">
+			 
+			<a href="./index.html" tittle="Logo da empresa"><img src="dindin-imagens/logo-footer.png" alt=""></a>	
+	
+			<nav id="linksite">
+				<ul>
+					<li><a href="./cursos.html" tittle="Página de cursos">cursos</a></li>
+					<li><a href="./blog.html" tittle="Blog da página">blog</a></li>
+					<li><a href="./contato.html" tittle="Página de contato">contato</a></li>
+				</ul>
+			</nav>
+	
+			<nav id="contato">
+				<p><a href="">quero ser prof</a></p>
+				<p><a href="./cursos.html" tittle="Página de cursos">quero ser aluno</a></p>
+			</nav>
+		</div>
 	</footer>
 
 	<script src="menu.js"></script>

@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Blog </title>
-    <link rel="stylesheet" href="styles.css/style-blog.css">
+    <link rel="stylesheet" href="styles/style-blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-global.css">
 </head>
 
 <body>
@@ -17,10 +18,17 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="dindin-imagens/logo-header.png" alt="">
+                <a href="./index.html" tittle="Página inicial"><img src="dindin-imagens/logo-header.png" alt="Logo da empresa"> </a>
             </div>
-            <nav>
-                <ul>
+            <nav id="nav">
+                <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <a href="./index.html" tittle="Página inicial">
+                        <li>HOME</li>
+                    </a>
                     <a href="./cursos.html" tittle="Página de cursos">
                         <li>CURSOS</li>
                     </a>
@@ -32,107 +40,108 @@
                     </a>
                 </ul>
             </nav>
+
         </div>
     </header>
 
     <main>
         <section id=desc>
             <div class=desc>
-                <h1>MAIS CONTEÚDO <br> PARA VOCÊ</h1>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit <br> aspernatur aut odit aut fugit, sed quia <br>
-                    consequuntur magni dolores eos qui ratione <br> voluptatem sequi nesciunt. </p>
+                <h1>MAIS CONTEÚDO PARA VOCÊ</h1>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
             </div>
             <div class=imagem>
-                <img src="dindin-imagens/ilustra-blog.png" alt="Imagem ilustrativa de uma pessoa
-				sentada, com uma perna cruzada em cima de uma pilha de livros, tem o cabelo 
-                comprido amarrado, usa óculos e sorri enquanto lê um livro.">
+                <img src="dindin-imagens/ilustra-blog.png" alt="">
             </div>
         </section>
 
-        <section class="article">
+        <section id="blog">
             <div class="container">
-
                 <article>
-                    <a href="./post.html" tittle="Post completo">
+                    <a href="./post.html" tittle="Prévia do post">
                         <div class="img-artigo"></div>
-                        <h2>On the other hand, we denounce</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled
-                            and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                            cannot
-                            <br> foresee the pain and trouble that are bound. <br>
-                        </p>
+                        <div>
+                            <h2>On the other hand, we denounce</h2>
+                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled
+                                and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                                cannot
+                                <br> foresee the pain and trouble that are bound. <br>
+                            </p>
+                        </div>
                     </a>
-
                 </article>
                 <article>
-                    <a href="./post.html" tittle="Post completo">
+                    <a href="./post.html" tittle="Prévia do post">
                         <div class="img-artigo"></div>
-                        <h2>On the other hand, we denounce</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled
-                            and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                            cannot
-                            <br> foresee the pain and trouble that are bound. <br>
-                        </p>
+                        <div>
+                            <h2>On the other hand, we denounce</h2>
+                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled
+                                and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                                cannot
+                                <br> foresee the pain and trouble that are bound. <br>
+                            </p>
+                        </div>
                     </a>
-
                 </article>
                 <article>
-                    <a href="./post.html" tittle="Post completo">
+                    <a href="./post.html" tittle="Prévia do post">
                         <div class="img-artigo"></div>
-                        <h2>On the other hand, we denounce</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled
-                            and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                            cannot
-                            <br> foresee the pain and trouble that are bound. <br>
-                        </p>
+                        <div>
+                            <h2>On the other hand, we denounce</h2>
+                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled
+                                and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                                cannot
+                                <br> foresee the pain and trouble that are bound. <br>
+                            </p>
+                        </div>
                     </a>
-
                 </article>
                 <article>
-                    <a href="./post.html" tittle="Post completo">
+                    <a href="./post.html" tittle="Prévia do post">
                         <div class="img-artigo"></div>
-                        <h2>On the other hand, we denounce</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled
-                            and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                            cannot
-                            <br> foresee the pain and trouble that are bound. <br>
-                        </p>
+                        <div>
+                            <h2>On the other hand, we denounce</h2>
+                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled
+                                and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                                cannot
+                                <br> foresee the pain and trouble that are bound. <br>
+                            </p>
+                        </div>
                     </a>
-
                 </article>
                 <article>
-                    <a href="./post.html" tittle="Post completo">
+                    <a href="./post.html" tittle="Prévia do post">
                         <div class="img-artigo"></div>
-                        <h2>On the other hand, we denounce</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled
-                            and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                            cannot
-                            <br> foresee the pain and trouble that are bound. <br>
-                        </p>
+                        <div>
+                            <h2>On the other hand, we denounce</h2>
+                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled
+                                and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                                cannot
+                                <br> foresee the pain and trouble that are bound. <br>
+                            </p>
+                        </div>
                     </a>
-
                 </article>
                 <article>
-                    <a href="./post.html" tittle="Post completo">
+                    <a href="./post.html" tittle="Prévia do post">
                         <div class="img-artigo"></div>
-                        <h2>On the other hand, we denounce</h2>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled
-                            and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
-                            cannot
-                            <br> foresee the pain and trouble that are bound. <br>
-                        </p>
+                        <div>
+                            <h2>On the other hand, we denounce</h2>
+                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                                beguiled
+                                and demoralized by the charms of pleasure of the moment, so blinded by desire, that they
+                                cannot
+                                <br> foresee the pain and trouble that are bound. <br>
+                            </p>
+                        </div>
                     </a>
-
                 </article>
-
-
-
             </div>
 
         </section>
@@ -140,25 +149,27 @@
         <!-- cor de fundo do footer é verde #419488  -->
 
         <footer>
-
-            <img src="dindin-imagens/logo-footer.png" alt="">
-
-
-            <nav>
-                <ul>
-                    <li><a href="./cursos.html" tittle="Página de cursos">cursos</a></li>
-                    <li><a href="./blog.html" tittle="Blog da página">blog</a></li>
-                    <li><a href="./contato.html" tittle="Página de contato">contato</a></li>
-                </ul>
-            </nav>
-
-            <nav id="contato">
-                <a href="">quero ser prof</a>
-                <a href="./cursos.html" tittle="Página de cursos">quero ser aluno</a>
-            </nav>
-
-
+            <div class="container">
+                 
+                <a href="./index.html" tittle="Logo da empresa"><img src="dindin-imagens/logo-footer.png" alt=""></a>
+        
+        
+                <nav id="linksite">
+                    <ul>
+                        <li><a href="./cursos.html" tittle="Página de cursos">cursos</a></li>
+                        <li><a href="./blog.html" tittle="Blog da página">blog</a></li>
+                        <li><a href="./contato.html" tittle="Página de contato">contato</a></li>
+                    </ul>
+                </nav>
+        
+                <nav id="contato">
+                    <p><a href="">quero ser prof</a></p>
+                    <p><a href="./cursos.html" tittle="Página de cursos">quero ser aluno</a></p>
+                </nav>
+            </div>
         </footer>
+
+        <script src="menu.js"></script>
 </body>
 
 </html>
