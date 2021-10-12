@@ -2,11 +2,12 @@
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
 
-    width: 1200px;
+    width: 90%;
     margin: auto;
 }
 
@@ -42,7 +43,6 @@ header nav ul li {
     font-size: 10px;
 }
 
-/*============================ MAIN =====================================*/
 
 /*===================================SECTION DESC========================================*/
 
@@ -62,15 +62,16 @@ header nav ul li {
     margin-top: 50px;
 }
 
-/*===================================SECTION ARTICLE========================================*/
+/*===================================SECTION BLOG========================================*/
 
-.article {
+#blog {
     margin-top: 100px;
     background: #E5E5E5;
 }
 
 article {
     text-align: justify;
+    width: 100%;
 }
 
 article a {
@@ -83,7 +84,7 @@ article h2 {
     color: #ff4081;
 }
 
-.article .container {
+#blog .container {
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(2,1fr);
@@ -141,5 +142,58 @@ footer #contato a{
     margin:10px;
     text-decoration: none;
     color: #FFFFFF;
+
+}
+
+@media (max-width:480px) {
+    
+ /*===================================SECTION POSTS=========================================*/
+    .container {
+        width: 80%;
+    }
+
+    #posts .container h1 {
+        font-size: 18px;
+    }
+
+    .posts .post .img {
+        width: 100%;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .post h4 {
+        font-size: 16px;
+    }
+
+    #posts p.bottom {
+        margin-top: 0px;
+    }
+
+}
+  
+
+
+
+@media (max-width: 1024px) {
+   
+    /*===================================SECTION DESC=========================================*/
+    section#desc{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*===================================SECTION BLOG=========================================*/
+    
+    #blog .container   {
+        display: flex;
+        flex-direction: column;
+         padding: 30px;
+    }
+   
 
 }

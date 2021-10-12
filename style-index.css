@@ -21,7 +21,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px
+    padding: 15px;
 }
 
 .container .logo img {
@@ -48,12 +48,9 @@ header nav ul li {
 }
 
 
-
-/*============================ MAIN =====================================*/
-
 /*===================================SECTION INDEX=========================================*/
 
-section#index {
+section#index .container{
     margin-top: 70px;
     display: flex;
     justify-content: center;
@@ -265,30 +262,156 @@ footer #contato p a {
     background-color: #62d6cb;
 }
 
-@media only screen and (max-width:480px) {
-
+@media (max-width:480px) {
     /*===================================HEADER=========================================*/
-
-    #menu {
-        display: none;
+  
+    header .container {
+        padding: 25px 0px;
+      
     }
 
-    .togle {
-        display: block;
-        color: #FFFFFF;
-        font-size: 20px;
-        margin: 0;
-        padding: 0;
+    header .container .logo img {
+        height: 40px;
     }
 
 
 
-    /*===================================SECTION INDEX=========================================*/
-
-    section#index {
+    section#index .container {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+    }
+
+        /*===================================SECTION DEPOIMENTOS=========================================*/
+
+        section#depoimentos .depoimentos div {
+         margin: 15px;
+        }
+
+
+ /*===================================SECTION POSTS=========================================*/
+    .container {
+        width: 80%;
+    }
+
+    #posts .container h1 {
+        font-size: 18px;
+    }
+
+    .posts .post .img {
+        width: 100%;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .post h4 {
+        font-size: 16px;
+    }
+
+    #posts p.bottom {
+        margin-top: 0px;
+    }
+
+
+
+    
+    /*===================================FOOTER=========================================*/
+
+    footer {
+        flex-direction: column;
+    }
+
+    
+    footer #contato p {
+        width: 200px;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0px;
+        background: #2E948A;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 90px);
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu a {
+        padding: 16px 0;
+        margin: 0 16px;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        color: #FFFFFF;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /*===================================SECTION INDEX=========================================*/
+    section#index .container {
+        justify-content: center;
     }
 
     .desc h1 {
@@ -301,9 +424,35 @@ footer #contato p a {
         margin-top: 50px;
     }
 
+    /*===================================SECTION POSTS=========================================*/
+
+    .posts {
+        flex-direction: column;
+    }
+
+    .posts .post {
+        display: flex;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .posts .img {
+        margin-right: 30px;
+        margin-bottom: 10px;
+        height: 120px;
+        width: 200px;
+        background-color: #C4C4C4;
+    }
+
+    #posts p.bottom {
+        margin-top: 0px;
+    }
+
+
     /*===================================SECTION CARDS=========================================*/
 
-    section#cards .container {
+    section#cards div.container {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -314,36 +463,43 @@ footer #contato p a {
 
     /*===================================SECTION DEPOIMENTOS=========================================*/
 
-    .depoimentos {
-        flex-direction: column;
-    }
-
     section#depoimentos .depoimentos div {
         flex-direction: column;
         width: 100%;
         margin-bottom: 50px;
     }
 
-    /*===================================SECTION DEPOIMENTOS=========================================*/
+     /*===================================SECTION POSTS=========================================*/
 
-    .posts {
+     .posts {
         flex-direction: column;
     }
 
     .posts .post {
+        display: flex;
         margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .posts .img {
+        margin-right: 30px;
+        margin-bottom: 10px;
+        height: 120px;
+        width: 200px;
+        background-color: #C4C4C4;
     }
 
     #posts p.bottom {
         margin-top: 0px;
     }
 
+ 
     /*===================================FOOTER=========================================*/
 
     footer {
-        flex-direction: column-reverse;
         height: auto;
         padding: 30px;
+        justify-content: space-between;
     }
 
     nav#contato {
@@ -356,6 +512,7 @@ footer #contato p a {
 
     #contato p {
         margin: 30px;
+        width: 300px;
     }
 
     #contato p a {
@@ -368,14 +525,3 @@ footer #contato p a {
     }
 }
 
-@media (max-width: 600px) {
-    #btn-mobile {
-        display:block;
-    }
-
-    #menu {
-        display: none;
-    }
-   
-
-}
