@@ -1,49 +1,3 @@
-*{
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-
-    width: 90%;
-    margin: auto;
-}
-
-/*============================ HEADER =====================================*/
-header{
-    background: #2E948A;
-    height: 50px;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px
-}
-
-.container .logo img { 
-      height: 35px;  
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-header nav ul li {
-    margin-left: 15px;
-    font-size: 10px;
-}
-
-
 /*===================================SECTION DESC========================================*/
 
 #desc {
@@ -52,14 +6,24 @@ header nav ul li {
     align-items: center;
 }
 
+.desc {
+    width: 300px;
+}
+
 .desc h1 {
     color:#009688;
     font-size: 30px;
     margin-bottom: 30px;
 }
 
+.desc p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
 .imagem img {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /*===================================SECTION BLOG========================================*/
@@ -82,6 +46,12 @@ article a {
 article h2 {
     margin-bottom: 20px;
     color: #ff4081;
+    font-weight: 500;
+}
+
+article p {
+    font-weight: 300;
+  
 }
 
 #blog .container {
@@ -101,99 +71,76 @@ article h2 {
     background: #c4c4c4;
     margin-bottom: 30px;
 }
-/*===================================FOOTER=========================================*/
-
-footer{
-    height: 100px;
-    background: #2E948A;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #FFFFFF;
-    font-size: 20px;
-}
-
-footer img {
-    height: 60px;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li{
-    font-size: 12px;
-    line-height: 20px;
-}
-
-footer ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-footer #contato a{
-    display: flex;
-    flex-direction: column;
-    padding: 7px 30px;
-    font-size: 12px;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 62px;
-    margin:10px;
-    text-decoration: none;
-    color: #FFFFFF;
-
-}
 
 @media (max-width:480px) {
+
+/*===================================SECTION DESC=========================================*/
+
+section#desc{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#desc {
+    padding: 20px;
+}
+
+#desc h1 {
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#desc .imagem img {
+    height: 300px;
+}
     
- /*===================================SECTION POSTS=========================================*/
-    .container {
-        width: 80%;
-    }
+ /*===================================SECTION BLOG=========================================*/
 
-    #posts .container h1 {
-        font-size: 18px;
-    }
+ #blog {
+    margin-top: 50px;
+}
 
-    .posts .post .img {
-        width: 100%;
-    }
+#blog .container   {
+    display: flex;
+    flex-direction: column;
+     padding: 30px;
+     row-gap: 50px;
+}  
 
-    .post {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
+ .img-artigo {
+     height: 150px;
+ }
 
-    .post h4 {
-        font-size: 16px;
-    }
+ article a{
+     display: flex;
+     flex-direction: column;
+ }
 
-    #posts p.bottom {
-        margin-top: 0px;
-    }
+
+ a .img-artigo {
+    width:100%;
+    margin-right: 15px;
+}
 
 }
   
-
-
-
 @media (max-width: 1024px) {
-   
-    /*===================================SECTION DESC=========================================*/
-    section#desc{
-        display: flex;
-        flex-direction: column-reverse;
-    }
 
     /*===================================SECTION BLOG=========================================*/
-    
     #blog .container   {
         display: flex;
         flex-direction: column;
-         padding: 30px;
-    }
-   
+        padding: 30px;
+    }  
 
+    article a{
+        display: flex;
+    }
+
+    .img-artigo {
+        width: 400px;
+        height: 130px;
+        margin-right: 15px;
+    }
 }

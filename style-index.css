@@ -1,53 +1,3 @@
-* {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-
-    max-width: 90%;
-    margin: auto;
-}
-
-/*============================ HEADER =====================================*/
-header {
-    background: #2E948A;
-    height: 90px;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
-
-.container .logo img {
-    height: 60px;
-}
-
-#btn-mobile {
-    display: none;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-header nav ul li {
-    margin-left: 15px;
-    font-size: 15px;
-}
-
-
 /*===================================SECTION INDEX=========================================*/
 
 section#index .container{
@@ -92,7 +42,14 @@ section a {
     border-radius: 62px;
     text-decoration: none;
     padding: 10px;
+    /* transition: 300ms; */
 }
+
+section a:hover {
+    color: #fff;
+    background: #FF4081;
+}
+
 
 /*===================================SECTION CARDS=========================================*/
 
@@ -127,6 +84,12 @@ section a {
     font-size: 14px;
     padding: 10px 30px;
     text-align: center;
+    transition: 300ms;
+}
+
+#cards .container a:hover {
+    background-color:#fff;
+    color: #FF4081;
 }
 
 #cards div {
@@ -209,87 +172,20 @@ section#posts {
     margin-top: 70px;
 }
 
-/*===================================FOOTER=========================================*/
-
-footer {
-    height: 100px;
-    background: #2E948A;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #FFFFFF;
-}
-
-footer img {
-    height: 60px;
-}
-
-footer ul {
-    list-style: none;
-}
-
-#linksite ul li {
-    font-size: 12px;
-    line-height: 20px;
-}
-
-#linksite ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 15px;
-}
-
-
-footer #contato p {
-    display: flex;
-    flex-direction: column;
-    padding: 7px 30px;
-    font-size: 15px;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 62px;
-    margin: 10px;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-footer #contato p a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-#contato p:hover {
-    background-color: #62d6cb;
-}
-
 @media (max-width:480px) {
-    /*===================================HEADER=========================================*/
-  
-    header .container {
-        padding: 25px 0px;
-      
-    }
-
-    header .container .logo img {
-        height: 40px;
-    }
-
-
-
-    section#index .container {
+/*===================================SECTION INDEX=========================================*/
+      section#index .container {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
 
-        /*===================================SECTION DEPOIMENTOS=========================================*/
+/*===================================SECTION DEPOIMENTOS=========================================*/
 
         section#depoimentos .depoimentos div {
          margin: 15px;
         }
-
-
- /*===================================SECTION POSTS=========================================*/
+/*===================================SECTION POSTS=========================================*/
     .container {
         width: 80%;
     }
@@ -315,101 +211,10 @@ footer #contato p a {
     #posts p.bottom {
         margin-top: 0px;
     }
-
-
-
-    
-    /*===================================FOOTER=========================================*/
-
-    footer {
-        flex-direction: column;
-    }
-
-    
-    footer #contato p {
-        width: 200px;
-    }
-
-
 }
 
-
-
-
-
-
-
 @media (max-width: 1024px) {
-    #menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 90px;
-        right: 0px;
-        background: #2E948A;
-        transition: .6s;
-        z-index: 1000;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-
-    }
-
-    #nav.active #menu {
-        height: calc(100vh - 90px);
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #menu a {
-        padding: 16px 0;
-        margin: 0 16px;
-    }
-
-    #btn-mobile {
-        display: flex;
-        padding: 8px 16px;
-        font-size: 16px;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-
-    #hamburguer {
-        color: #FFFFFF;
-        border-top: 2px solid;
-        width: 20px;
-    }
-
-    #hamburguer::after,
-    #hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background-color: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburguer {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburguer::before {
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-
-    /*===================================SECTION INDEX=========================================*/
+/*===================================SECTION INDEX=========================================*/
     section#index .container {
         justify-content: center;
     }
@@ -424,32 +229,7 @@ footer #contato p a {
         margin-top: 50px;
     }
 
-    /*===================================SECTION POSTS=========================================*/
-
-    .posts {
-        flex-direction: column;
-    }
-
-    .posts .post {
-        display: flex;
-        margin-bottom: 50px;
-        width: 100%;
-    }
-
-    .posts .img {
-        margin-right: 30px;
-        margin-bottom: 10px;
-        height: 120px;
-        width: 200px;
-        background-color: #C4C4C4;
-    }
-
-    #posts p.bottom {
-        margin-top: 0px;
-    }
-
-
-    /*===================================SECTION CARDS=========================================*/
+/*===================================SECTION CARDS=========================================*/
 
     section#cards div.container {
         display: flex;
@@ -461,7 +241,7 @@ footer #contato p a {
         margin-bottom: 60px;
     }
 
-    /*===================================SECTION DEPOIMENTOS=========================================*/
+/*===================================SECTION DEPOIMENTOS=========================================*/
 
     section#depoimentos .depoimentos div {
         flex-direction: column;
@@ -469,7 +249,7 @@ footer #contato p a {
         margin-bottom: 50px;
     }
 
-     /*===================================SECTION POSTS=========================================*/
+/*===================================SECTION POSTS=========================================*/
 
      .posts {
         flex-direction: column;
@@ -491,37 +271,6 @@ footer #contato p a {
 
     #posts p.bottom {
         margin-top: 0px;
-    }
-
- 
-    /*===================================FOOTER=========================================*/
-
-    footer {
-        height: auto;
-        padding: 30px;
-        justify-content: space-between;
-    }
-
-    nav#contato {
-        width: 100%;
-    }
-
-    #linksite {
-        display: none;
-    }
-
-    #contato p {
-        margin: 30px;
-        width: 300px;
-    }
-
-    #contato p a {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    footer img {
-        margin-top: 30px;
     }
 }
 
