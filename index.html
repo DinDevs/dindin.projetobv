@@ -2,207 +2,110 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="utf-8" />
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-	<title>Dindin | Educação Financeira</title>
-	<link rel="stylesheet" href="style-index.css" />
+	<meta charset="UTF-8/>
+	<meta content="width-device-width initial-scale="1.0", maximum-scale="1.0" name="viewport"/>
+	<title>dindin - Cursos</title>
+	<link href="style.css" rel="stylesheet" />
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<!-- cor de fundo verde nav  #2E948A -->
-	<!-- cor de fundo branca header  #E5E5E5 -->
+	<!-- BACKGROUND GREEN NAV #2E948A -->
+	<!-- BACKGROUND WHITE HEADER #E5E5E5 -->
 	<header>
 		<div class="container">
 			<div class="logo">
-				<img src="dindin-imagens/logo-header.png" alt="">
+				<img src="logo-header.png" alt="">
 			</div>
-			<nav id="nav">
-				<button id="btn-mobile">Menu</button>
-				<ul id="menu">
-					<a  href="./cursos.html" tittle="Página de cursos">
+			<nav>
+				<ul>
+					<a href="">
 						<li>CURSOS</li>
 					</a>
-					<a href="./blog.html" tittle="Blog da página">
+					<a href="">
 						<li>BLOG </li>
 					</a>
-					<a href="./contato.html" tittle="Página de contato">
+					<a href="">
 						<li>CONTATO</li>
 					</a>
 				</ul>
 			</nav>
-
 		</div>
 	</header>
 
+<!----------main-------->
+
 	<main>
+		    <section class="caixa_title">
+                <div class="title_course">
+                    <h1 class="high_text">Cursos</h1>
+                    <h2 class="minor_text">Educação financeira é tudo de bom</h2>
+                </div>
+            </section>
 
-		<section id="index">
-			<div class="desc">
-				<h1>Educação <br> Financeira <br> é tudo de bom</h1>
-				<p>Vem comigo que te mostro por onde começar </p>
-				<p class="link"><a href="">quero saber mais</a></p>
-			</div>
-			<div>
-				<img src="dindin-imagens/ilustra-banner.png" alt="">
-			</div>
-		</section>
-
-
-
-		<!-- cor de fundo gelo no article #F6F6F6 -->
-		<section id="cards">
-			<div class="container">
+		<div class= "container">
+			<section id="index">
 				<div class="card">
-					<img src="dindin-imagens/ilustra-poupando.png" alt="Imagem sobre investimento">
-					<h2>Investimento para iniciantes</h2>
-					<p>Duis aute irure dolor in reprehenderit <br> in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur.
-					</p>
-					<p><a href="">começar agora</a></p>
-				</div>
-
-				<div class="card">
-					<img src="dindin-imagens/ilustra-investimento.png" alt="Imagem sobre poupar">
-					<h2>Poupando e Rendendo</h2>
-					<p>Duis aute irure dolor in reprehenderit <br> in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur.
-					</p>
-					<p><a href=""> começar agora</a></p>
-				</div>
-
-				<div class="card">
-					<img src="dindin-imagens/ilustra-independencia.png" alt="Imagem sobre independência financeira">
-					<h2>Independência Financeira</h2>
-					<p>Duis aute irure dolor in reprehenderit <br> in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur.
-					</p>
-					<p><a href="">começar agora</a></p>
-				</div>
-
-			</div>
-		</section>
-
-		<section id="depoimentos">
-			<div class="container">
-				<h1>O QUE FALAM SOBRE NÓS</h1>
-				<div class="depoimentos">
-					<div>
-						<img src="dindin-imagens/icon-wally.png" alt="">
-						<p>”Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque
-							<br> laudantium,
-							totam rem aperiam.”
-							<br><b>Wally, 25</b>
-						</p>
-					</div>
-
-					<div>
-						<img src="dindin-imagens/icon-jaden.png" alt="">
-						<p>”Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque
-							<br> laudantium,
-							totam rem aperiam.”
-							<br><b>Jaden Smith, 23</b>
-						</p>
+					<div><img src="ilustra-poupando.png" alt=""></div>
+					<div class="cards_info">
+					<h1 class="cards_title">Investimento para iniciantes</h1>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi<br>architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas<br>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione<br>voluptatem sequi nesciunt.</p>
+					<button href="" class="cards_button">começar agora</button>
 					</div>
 				</div>
-				<div class="depoimentos">
-					<div>
-						<img src="dindin-imagens/icon-whoopi.png" alt="">
-						<p>”Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque
-							<br>
-							laudantium,
-							totam rem aperiam.”
-							<br><b>Whoopi Goldberg,37 </b>
-						</p>
-					</div>
-
-					<div>
-						<img src="dindin-imagens/icon-jane.png" alt="">
-						<p>”Sed ut perspiciatis unde omnis iste natus <br> error sit voluptatem accusantium doloremque
-							<br>
-							laudantium,
-							totam rem aperiam.”
-							<br><b>Janes Joplin, 29</b>
-						</p>
-					</div>
+			</section>
+                <hr class="linha">
+				<div class="index">
+					<section id="index">
+						<div class="card">
+							<div><img src="ilustra-investimento.png" alt=""></div>
+							<div class="cards_info">
+							<h1 class="cards_title">Poupando e rendendo</h1>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi<br>architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas<br>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione<br>voluptatem sequi nesciunt.</p>
+							<button href="" class="cards_button">começar agora</button>		
+						</div>	
 				</div>
-			</div>
-		</section>
-
-		<section id="posts">
-			<div class="container">
-				<h1>MAIS CONTEÚDO PARA VOCÊ</h1>
-				<div class="posts">
-					<div class="post">
-						<div class="img"></div>
-						<h4>Itaque earum rerum</h4>
-						<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias 
-							consequatur aut perferendis doloribus asperiores repellat.</p>
-					</div>
-
-					<div class="post">
-						<div class="img"></div>
-						<h4>Itaque earum rerum</h4>
-						<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-							consequatur
-							aut
-							perferendis doloribus asperiores repellat.</p>
-
-					</div>
-
-					<div class="post">
-						<div class="img"></div>
-						<h4>Itaque earum rerum</h4>
-						<p>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-							consequatur
-							aut
-							perferendis doloribus asperiores repellat.</p>
-					</div>
-				</div>
-
-				<p class="bottom">
-					<a href="./blog.html" tittle="Blog da página">
-						ver todos os posts
-					</a>
-				</p>
-			</div>
-		</section>
-
-
+			</section>
+                <hr class="linha">
+				<div class="index">
+					<section id="index">
+						<div class="card">
+							<div><img src="ilustra-independencia.png" alt=""></div>
+							<div class="cards_info">
+							<h1 class="cards_title">Independência Financeira</h1>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi<br>architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas<br>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione<br>voluptatem sequi nesciunt.</p>
+							<button href="" class="cards_button">começar agora</button>		
+						</div>
+					</section>	
+		        </div>
 	</main>
 
-	</div>
-
-
-	<!-- cor de fundo do footer é verde #419488  -->
+	<!-- background color #419488  -->
 	<footer>
 
-		<img src="dindin-imagens/logo-footer.png" alt="">
+		<img src="logo-footer.png" alt="">
 
 
-		<nav id="linksite">
+		<nav>
 			<ul>
-				<li><a href="./cursos.html" tittle="Página de cursos">cursos</a></li>
-				<li><a href="./blog.html" tittle="Blog da página">blog</a></li>
-				<li><a href="./contato.html" tittle="Página de contato">contato</a></li>
+				<li><a>cursos</a></li>
+				<li><a>blog</a></li>
+				<li><a>contato</a></li>
 			</ul>
 		</nav>
 
 		<nav id="contato">
-			<p><a href="">quero ser prof</a></p>
-			<p><a href="./cursos.html" tittle="Página de cursos">quero ser aluno</a></p>
+			<a>quero ser prof</a>
+			<a>quero ser aluno</a>
 		</nav>
 
 
 	</footer>
-
-	<script src="menu.js"></script>
 </body>
 
 </html>
