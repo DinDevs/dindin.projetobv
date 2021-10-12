@@ -1,45 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
+
 <head>
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-	<title>Contato </title>
-	<link href="css/seu-stylesheet.css" rel="stylesheet" />
-	<script src="scripts/seu-script.js"></script>
-	<link rel="stylesheet" href="style-contato.css" />
+	<title>Dindin | Contato</title>
+	<link rel="stylesheet" href="style-contato.css"/>
+	<link rel="stylesheet" href="style-global.css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	<!-- cor de fundo verde nav  #2E948A -->
-	<!-- cor de fundo branca header  #E5E5E5 -->
 	<header>
 		<div class="container">
 			<div class="logo">
 				<img src="dindin-imagens/logo-header.png" alt="">
 			</div>
-			<nav>
-				<ul>
-					<a href="">
+			<nav id="nav">
+				<button id="btn-mobile">Menu</button>
+				<ul id="menu">
+					<a  href="./cursos.html" tittle="Página de cursos">
 						<li>CURSOS</li>
 					</a>
-					<a href="">
+					<a href="./blog.html" tittle="Blog da página">
 						<li>BLOG </li>
 					</a>
-					<a href="">
+					<a href="./contato.html" tittle="Página de contato">
 						<li>CONTATO</li>
 					</a>
 				</ul>
 			</nav>
+
 		</div>
 	</header>
-<main>
-		<div id="formulario">
+
+	<main>
+		<section id="contato">
 			<h1>Contato</h1>
 			<br>
 		</div>
@@ -69,27 +68,28 @@
 
 </main>
 
+<footer>
 
-	<!-- cor de fundo do footer é verde #419488  -->
-	<footer>
-
-		<img src="dindin-imagens/logo-footer.png" alt="">
+	<img src="dindin-imagens/logo-footer.png" alt="">
 
 
-		<nav id="linksite">
-			<ul>
-				<li><a href="">cursos</a></li>
-				<li><a href="">blog</a></li>
-				<li><a href="">contato</a></li>
-			</ul>
-		</nav>
+	<nav id="linksite">
+		<ul>
+			<li><a href="./cursos.html" tittle="Página de cursos">cursos</a></li>
+			<li><a href="./blog.html" tittle="Blog da página">blog</a></li>
+			<li><a href="./contato.html" tittle="Página de contato">contato</a></li>
+		</ul>
+	</nav>
 
-		<nav id="contato">
-			<a href="">quero ser prof</a>
-			<a href="">quero ser aluno</a>
-		</nav>
+	<nav id="contato">
+		<p><a href="">quero ser prof</a></p>
+		<p><a href="./cursos.html" tittle="Página de cursos">quero ser aluno</a></p>
+	</nav>
 
 
 	</footer>
+
+	<script src="menu.js"></script>
 </body>
+
 </html>
