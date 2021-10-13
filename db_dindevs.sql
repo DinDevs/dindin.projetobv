@@ -91,6 +91,7 @@ create table curso
 	id_curso		int 			not null auto_increment,
 	nome			varchar(50) 	not null,
 	duracao			varchar(30) 	not null,
+	descricao		text			not null,
 	constraint pk_curso primary key (id_curso)
 ); 
 
@@ -155,10 +156,10 @@ create table pagamento
 	references curso(id_curso)	
 );	
 
-insert into curso (nome, duracao) values
-('Investimento para iniciantes', '15 horas'),
-('Poupando e Rendendo', '25 horas'),
-('Independência financeira', '30 horas');
+insert into curso (nome, duracao, descricao) values
+('Investimento para iniciantes', '15 horas','São excelentes os motivos para começar a investir o seu dinheiro, mas por onde começar? Essa dúvida é comum, e se você se identifica, venha conosco que iremos te ajudar!'),
+('Poupando e Rendendo', '25 horas','Já investe e é atuante no mercado financeiro mas se sente estagnado? Te damos uma mãozinha para mudar esse status!'),
+('Independência financeira', '30 horas','Conquiste sua tão sonhada independência financeira definitivamente com a gente!');
 
 select * from curso; 
 
