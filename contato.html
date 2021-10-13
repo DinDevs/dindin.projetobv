@@ -15,48 +15,50 @@
 
 <body>
 	<header>
-		<div class="container">
-			<div class="logo">
-				<img src="dindin-imagens/logo-header.png" alt="">
-			</div>
-			<nav id="nav">
-				<button id="btn-mobile">Menu</button>
-				<ul id="menu">
-					<a  href="./cursos.html" tittle="Página de cursos">
-						<li>CURSOS</li>
-					</a>
-					<a href="./blog.html" tittle="Blog da página">
-						<li>BLOG </li>
-					</a>
-					<a href="./contato.html" tittle="Página de contato">
-						<li>CONTATO</li>
-					</a>
-				</ul>
-			</nav>
-
+	<div class="container">
+		<div class="logo">
+			<a href="./index.html" tittle="Página inicial"><img src="dindin-imagens/logo-header.png" alt="Logo da empresa"> </a>
 		</div>
+		<nav id="nav">
+			<button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+				<span id="hamburguer"></span>
+			</button>
+			<ul id="menu" role="menu">
+				<a href="./index.html" tittle="Página inicial">
+                        <li>HOME</li>
+                    		</a>
+				<a  href="./cursos.html" tittle="Página de cursos">
+					<li>CURSOS</li>
+				</a>
+				<a href="./blog.html" tittle="Blog da página">
+					<li>BLOG </li>
+				</a>
+				<a href="./contato.html" tittle="Página de contato">
+					<li>CONTATO</li>
+				</a>
+			</ul>
+		</nav>
+	</div>
 	</header>
-
-	<main>
-		<section id="contato">
-			<h1>Contato</h1>
-			<br>
-		</div>
+	
+<main>
+	<section id="contato">
+		<h1>Contato</h1>
+		<br>
 	<form>
-
 		<div id="blocos">
             	<input type="text" placeholder="nome" id="nome" required>
 			<br>
 			<br>
-           		<input type="email" placeholder="email" id="email" required>
+           	<input type="email" placeholder="email" id="email" required>
 			<br>
 			<br>
             	<textarea row="30" placeholder="mensagem" id="email" required></textarea>
 			<br>
 			<br>
-			<a href="">
-				<button type="submit" id="botão">entrar</button>
-			</a>
+		<a href="">
+			<button type="submit" id="botão">entrar</button>
+		</a>
 		</div>
 
 		<div id="img">
@@ -65,10 +67,8 @@
 			sem fio, uma brincadeira popular, na qual uma pessoa fala num copo ligado 
 			com barbante com outro copo que está no ouvido da outra pessoa">
 		</div>
-
 	</form>
-
-
+	</section>
 </main>
 
 	<footer>
