@@ -42,7 +42,7 @@ section a {
     border-radius: 62px;
     text-decoration: none;
     padding: 10px;
-    /* transition: 300ms; */
+    transition: 300ms;
 }
 
 section a:hover {
