@@ -79,7 +79,6 @@ create table cidade
 create table estado
 (	
 	id_estado		int				not null auto_increment,
-	id_cidade		int				not null,
 	nome			varchar(90)		not null,
 	uf				varchar(2)		not null,
 	constraint pk_estado primary key (id_estado)
@@ -162,4 +161,3 @@ insert into curso (nome, duracao, descricao) values
 ('Independência financeira', '30 horas','Conquiste sua tão sonhada independência financeira definitivamente com a gente!');
 
 select * from curso; 
-
