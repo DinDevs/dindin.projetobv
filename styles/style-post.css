@@ -25,6 +25,7 @@ h6{
 
 
 /*============== IMAGEM POST  =================*/
+
 .post{
     
         
@@ -35,6 +36,8 @@ h6{
     background: #C4C4C4
     
 }
+    
+
     
 #posts p.bottom {
     text-align: center;
@@ -68,21 +71,10 @@ p{
     margin-top: 64px;
 }
 
-.p2{
+.p2, .p3, .p4, .p5, .p6{
     margin-top: 32px;
 }
-.p3{
-    margin-top: 32px;
-}
-.p4{
-    margin-top: 32px;
-}
-.p5{
-    margin-top: 32px;
-}
-.p6{
-    margin-top: 32px;
-}
+
 
 /* ==================== bg cursos ============= */
 
@@ -94,7 +86,7 @@ p{
 
 #cards .container{
     display: flex;
-    width: 1200px;
+    width: 100%;
     justify-content: space-between;
     padding: 50px;
 }
@@ -155,39 +147,39 @@ p{
     
         margin-bottom: 10px;
         height: 300px;
-        width: 300px;
-        margin-left: 20px;
+        margin-right: 20px;
  }
     .texto{
     
-        width: 300px;
-        height: 350px;
-        left: 204px;
-        top: 910px;
-    
-        align-items: center;   
-        margin-left: 30px;
-        
-        font-weight: 200;
+        width: 100%;
+        align-items: center;
+        margin-right: 30px;
+        font-weight: 200;  
         font-size: 16px;
         line-height: 21px;
+      
 }   
-       
-        #cards {
-         margin-top: 2100px; 
-        
- }
-         
-        #cards div {
-        
-        margin-top: 50px; 
-        Flex-direction: column
-         
+   
+    #card div {
+        margin-top: 50px;
+        flex-direction: column;
     }
-    
-    
- }
-    
-    
 
+  
+}
+
+@media only screen and (max-width: 1024px){
+    
+    section#cards div.container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+        .card{
+            margin-bottom: 8%;
+
+  
+  }
+
+}
 
