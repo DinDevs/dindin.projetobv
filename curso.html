@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8/>
-	<meta content="width-device-width initial-scale="1.0", maximum-scale="1.0" name="viewport"/>
-	<title>dindin - Cursos</title>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+	<title>Dindin | Curso Investimento para iniciantes</title>
 	<link href="style-curso.css" rel="stylesheet" />
 	<script src="script.js"></script>
 	<link rel="stylesheet" href="curso.css" />
@@ -20,21 +20,28 @@
 	<header>
 		<div class="container">
 			<div class="logo">
-				<img src="logo-header.jpg" alt="">
+				<a href="./index.html" tittle="Página inicial"><img src="dindin-imagens/logo-header.png" alt="Logo da empresa"> </a>
 			</div>
-			<nav>
-				<ul>
-					<a href="">
+			<nav id="nav">
+				<button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+					<span id="hamburguer"></span>
+				</button>
+				<ul id="menu" role="menu">
+					<a href="./index.html" tittle="Página inicial">
+                        <li>HOME</li>
+                    </a>
+					<a  href="./cursos.html" tittle="Página de cursos">
 						<li>CURSOS</li>
 					</a>
-					<a href="">
+					<a href="./blog.html" tittle="Blog da página">
 						<li>BLOG </li>
 					</a>
-					<a href="">
+					<a href="./contato.html" tittle="Página de contato">
 						<li>CONTATO</li>
 					</a>
 				</ul>
 			</nav>
+
 		</div>
 	</header>
 
