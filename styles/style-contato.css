@@ -58,7 +58,8 @@ main a button{
 }
 
 #botão:hover{
-    background-color: #fd71a0;
+    color:#FF4081;
+    background-color: #FFFFFF;
 }
 
 /*===================================RESPONSIVIDADE TELA PEQUENA=========================================*/
