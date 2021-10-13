@@ -1,8 +1,5 @@
 /*----main----*/
-main .container{
-    margin-bottom: 10%;
-    width: 100%;
-}
+
 
 section #index {
 margin-top: 70px;
@@ -12,24 +9,52 @@ justify-content: center;
 }
 
 .title_course {
-    margin-top: 70px;
-    justify-content: center;
+margin-top: 70px;
+margin-left: 100px;
+margin-bottom: 70px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
 }
 
 .high_text {
 color: #FF4081;
-font-size: 35px;
-margin-left: 10%;
 }
 
 .minor_text {
-margin-top: 1%;
+margin-top: auto;
 margin-bottom: 100px;
 font-size: 15px;
 font-weight: 100;
-margin-left: 10%;
 }
 
+.desc {
+margin-top: 100px;
+margin-left: 20px;
+margin-right: 100%;
+margin-bottom: 20px;
+}
+
+.linha {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.desc h1 {
+color:#FF4081
+}
+
+.desc a{
+    width: 216px;
+    height: 25px;
+    line-height: 23px;
+    font-size: 20px;
+}
+.desc p {
+margin-bottom: 25px;
+font-size: 0.875rem;
+}
 
 #index img {
 height: 300px;
@@ -39,21 +64,20 @@ margin-left: 80px;
 section h1{ 
 color: #009688;
 border: 150px;
-font-size: 25px;
+font-size: 30px;
 font-weight: bold;
 }
 
 section p {
 color: #000000;
-font-size: 20px;
+font-size: 13px;
 margin-top: 15px;
 margin-bottom: 45px;
-font-weight: 300;
 }
 
 section a {
 color: #FF4081;
-font-size: 15px;
+font-size: 13px;
 border: 2px solid  #FF4081;
 text-decoration: none;
 padding: 10px;
@@ -70,33 +94,34 @@ padding: 50%;
 }
 
 hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin: 60;
+margin-top: 50px;
+margin-bottom: 50px;
+margin: 60;
+
 }
 
 .card{
-    display: flex;
+display: flex;
 }
 
 .cards_info{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 32px;
+display: flex;
+flex-direction: column;
+align-content: flex-start;
+justify-content: flex-start;
+align-items: flex-start;
+margin-left: 32px;
 }
 
 .cards_button{
-    background-color: #419488;
-    border-color: #2E948A;
-    color: #FFFFFF;
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    margin-top: 30px;
-    transition: ease-in-out all 500ms;
+background-color: #419488;
+border-color: #2E948A;
+color: #FFFFFF;
+width: 50px;
+height: 50px;
+border-radius: 30px;
+margin-top: 30px;
+transition: ease-in-out all 500ms;
 }
 
 .cards_button:hover{
@@ -105,13 +130,86 @@ background: #042c28;
 
 .cards_title{
 color: #FF4081;
+
 }
 
-/* =================responsividade=============== */
-@media only screen and (max-width: 900px) {
+  
+@media (max-width:550px) {
 
-    .card{
-    flex-direction: column;
-    align-items: center;
+
+}
+
+@media (max-width: 1024px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0px;
+        background: #2E948A;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+
     }
+
+    #nav.active #menu {
+        height: calc(100vh - 90px);
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu a {
+        padding: 16px 0;
+        margin: 0 16px;
+    }
+
+    #menu a li {
+        font-size: 30px;
+    }
+
+    
+    #btn-mobile {
+        display: flex;
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        color: #FFFFFF;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
 }
