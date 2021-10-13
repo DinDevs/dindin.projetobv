@@ -177,9 +177,12 @@ p{
   }
         .card{
             margin-bottom: 8%;
-
-  
+ 
   }
+
+ #cards .container p {
+      margin-bottom: 50px;
 
 }
 
+}
